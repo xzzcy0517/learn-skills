@@ -1,0 +1,15 @@
+{
+  "name": "learn-skill",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GitHub 优秀 Skill 使用方法与经验的学习文档仓库",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
