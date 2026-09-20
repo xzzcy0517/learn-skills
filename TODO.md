@@ -11,6 +11,7 @@
 - [ ] 2026-09-20 | ai-ppt-skill(上游仓库) | 仓库无 LICENSE 文件,外人复用有法律模糊地带 → 决定是否给上游补开源许可(如 MIT);补后执行 `npm run vendor:update -- ai-ppt-skill` 并同步 SOURCE.yml 的 license,然后删本条
 - [ ] 2026-09-20 | ai-ppt-skill | 转换脚本只探测 macOS 浏览器路径,Linux 下依赖 `CHROME` 环境变量,未实测 → 如在本服务器实测通过,把可行的安装/调用方法写进笔记「实战经验」,然后删本条
 - [ ] 2026-09-20 | anthropics-skill-creator | 笔记还是 TODO 骨架,快照已就绪 → 排期学习:通读 `vendor/anthropics-skill-creator/SKILL.md` 与 references/ 后按模板补全,状态改 verified 后删本条
+- [ ] 2026-09-20 | anthropics-skills | 许可三档新规生效后,`doc-coauthoring`(无协议,旧规曾拒)已可补快照 → 排期时 `vendor:fetch -- https://github.com/anthropics/skills anthropics-doc-coauthoring --subdir skills/doc-coauthoring`,license 填「未声明(作者异议即下架)」,删本条
 
 ## 已完成
 

@@ -19,9 +19,9 @@
 | --- | --- | --- |
 | Apache-2.0 | academy-guide、algorithmic-art、brand-guidelines、canvas-design、claude-api、discernment-nudge、frontend-design、internal-comms、mcp-builder、skill-creator、slack-gif-creator、theme-factory、webapp-testing、web-artifacts-builder | ✅ 可逐个 `--subdir skills/<名称>` vendored |
 | Anthropic 服务条款限制(SKILL.md 标注 Proprietary) | docx、pdf、pptx、xlsx | ❌ 只能经官方渠道使用,不镜像分发 |
-| 无许可证文件 | doc-coauthoring | ❌ 仅跳转上游仓库学习 |
+| 无许可证文件 | doc-coauthoring | ✅ 可快照(未声明许可 ≠ 拒绝使用;醒目标注出处与版权,作者异议即下架) |
 
-> 结论:想学 docx/pdf 这类文档技能,读笔记 + 走官方安装渠道;Apache-2.0 的 14 个技能可以在本仓库直接下载快照。
+> 结论:想学 docx/pdf 这类 ToS 限制技能,读笔记 + 走官方安装渠道,不镜像;其余技能可在本仓库直接下载快照。分级规则见 [快照与更新工作流](/guide/vendor)。
 
 ## 学习路线(TODO)
 
