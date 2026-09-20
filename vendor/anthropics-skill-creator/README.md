@@ -1,0 +1,9 @@
+# anthropics-skill-creator(上游快照)
+
+> 本目录是 [https://github.com/anthropics/skills](https://github.com/anthropics/skills) 在 **2026-09-20**(commit `34040c9c56`)时点的快照,
+> 由 `scripts/vendor.mjs` 生成,用于配合 [学习笔记](../../docs/skills/anthropics-skill-creator/index.md) 的"时点学习"。
+
+- **原始文档与版权**:文件内容归原作者所有,许可证见 SOURCE.yml 与本目录 LICENSE(如有)
+- **学习笔记**:`docs/skills/anthropics-skill-creator/`
+- **更新快照**:仓库根目录执行 `npm run vendor:update -- anthropics-skill-creator`,按提示对照上游 diff 复学
+- 本文件与 SOURCE.yml 由脚本维护,请勿在快照目录内手写笔记

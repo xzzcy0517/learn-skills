@@ -1,0 +1,11 @@
+# 上游快照出处 —— 由 scripts/vendor.mjs 维护,请勿手改 name/source/ref/subdir/commit
+# license 与 status 需要人工核对修改(status: draft 笔记未写完 / verified 已验证 / outdated 上游已更新待复学)
+name: anthropics-skill-creator
+source: https://github.com/anthropics/skills
+ref: main
+subdir: skills/skill-creator
+commit: 34040c9c568585f6929bedeaad110ad08f079624
+license: Apache-2.0 (见本目录 LICENSE.txt)
+vendored_at: 2026-09-20
+notes: docs/skills/anthropics-skill-creator
+status: draft

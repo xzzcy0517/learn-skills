@@ -1,0 +1,12 @@
+# SOURCE.yml 示例 —— 实际文件由 scripts/vendor.mjs 在 fetch 时自动生成
+# 手工维护时请保持扁平 key: value 格式(脚本按此解析)
+name: example-skill                              # 与 vendor/ 下目录名一致
+source: https://github.com/owner/example-skill  # 上游仓库地址(出处,必须)
+ref: main                                        # 拉取时的分支或 tag
+subdir: skills                                   # 只 vendored 仓库内子目录时填写,否则 null
+commit: 0d4f8a2b9c1d3e5f7a9b0c2d4e6f8a0b1c3d5e7f # 拉取时的确切 commit sha(时点凭证)
+license: MIT                                     # 需人工核对上游 LICENSE 后填写
+vendored_at: 2026-09-20                          # 首次拉取日期
+updated_at: 2026-10-01                           # vendor:update 自动写入
+notes: docs/skills/example-skill                 # 对应学习笔记目录
+status: verified                                 # draft 笔记未写完 / verified 已验证 / outdated 上游有更新待复学

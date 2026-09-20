@@ -15,13 +15,18 @@ GitHub 上有大量提升开发效率的 Skill —— 从 Claude Code / Agent Sk
 ## 怎么阅读
 
 - 第一次来:从 [Skill 笔记总览](/skills/) 挑感兴趣的看
-- 想写笔记:先看 [如何贡献](/guide/contribute),照 [笔记模板](/skills/template) 写
+- 想直接用:每个笔记对应的 skill **原始快照**都在仓库的 `vendor/` 目录里,clone 仓库或到 GitHub 上下载对应子目录即可
+- 想写笔记:先看 [快照与更新工作流](/guide/vendor) 和 [如何贡献](/guide/contribute),照 [笔记模板](/skills/template) 写
 - 本地浏览:仓库根目录执行 `npm install && npm run docs:dev`
 
-## 目录约定
+## 目录约定:快照与笔记一一对应
+
+本仓库采用 monorepo 结构,同一个 Skill 在两处成对出现,**目录同名**:
 
 ```
-docs/skills/<skill 名称>/     # 每个 Skill 一个子目录,目录名与 GitHub 仓库/技能名保持一致
+vendor/<skill 名称>/            # 上游原始快照 + SOURCE.yml 出处记录
+docs/skills/<skill 名称>/       # 对应的学习笔记(index.md,笔记多时可按主题拆分)
 ```
 
-例如 `docs/skills/anthropics-skills/`、`docs/skills/remotion-skill/`。笔记较多时,子目录内可再按主题拆分多个 `.md` 文件。
+例如 `vendor/anthropics-skills/` ⇔ `docs/skills/anthropics-skills/`。
+笔记永远描述快照那个时点的内容,上游更新后对照 diff 复学再刷新 —— 详见 [快照与更新工作流](/guide/vendor)。

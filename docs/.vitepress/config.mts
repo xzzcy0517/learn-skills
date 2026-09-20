@@ -20,6 +20,7 @@ export default defineConfig({
           text: '入门指南',
           items: [
             { text: '介绍', link: '/guide/' },
+            { text: '快照与更新工作流', link: '/guide/vendor' },
             { text: '如何贡献', link: '/guide/contribute' },
           ],
         },
@@ -30,6 +31,14 @@ export default defineConfig({
           items: [
             { text: '总览', link: '/skills/' },
             { text: '笔记模板', link: '/skills/template' },
+            {
+              text: 'anthropics/skills(合集导读)',
+              link: '/skills/anthropics-skills/',
+            },
+            {
+              text: 'skill-creator',
+              link: '/skills/anthropics-skill-creator/',
+            },
           ],
         },
       ],
