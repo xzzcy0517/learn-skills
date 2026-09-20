@@ -12,6 +12,7 @@
 4. **提交即推送**:commit 后立刻 `git push origin main`(本地验证流程依赖拉取最新代码)
 5. **许可红线**:上游标注 Proprietary / 受服务条款限制 / 无 LICENSE 的内容,**一律不做快照**,只写笔记跳转出处
 6. **快照不可改写**:`vendor/` 内上游文件原样保存;`SOURCE.yml` 的 `license` 字段必须人工核对,留 TODO 不得提交
+7. **TODO 台账**:凡是会话内无法闭环、需要用户确认/实操的事项,收尾时**必须**追加到根目录 `TODO.md`,格式 `- [ ] 日期 | 主题 | 事项 → 建议动作`;用户确认后由 agent 删除该条(历史靠 git log 追溯)。新会话开场先读 `TODO.md`,未完成欠账主动跟进提醒
 
 ## 按需引用(做哪件事,读哪份文件,别凭记忆猜)
 
@@ -21,6 +22,7 @@
 | 撰写 / 修改学习笔记 | `docs/skills/template.md`(结构)+ `docs/guide/contribute.md`(规范) |
 | 新增页面、调整导航 | `docs/.vitepress/config.mts` |
 | 快照目录与出处字段约定 | `vendor/README.md` + `vendor/SOURCE.example.yml` |
+| 会话开场 / 收尾 | `TODO.md`(开场查欠账,收尾录新欠账) |
 
 ## 已知的坑(踩过的,别再踩)
 
