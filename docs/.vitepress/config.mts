@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'Learn Skill',
+  title: 'Learn Skills',
   description: '收集和分享 GitHub 上优秀 Skill 的使用方法与实践经验的文档仓库',
   lastUpdated: true,
   cleanUrls: true,
@@ -36,7 +36,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/xzzcy0517/learn-skill' },
+      { icon: 'github', link: 'https://github.com/xzzcy0517/learn-skills' },
     ],
 
     search: {

@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Learn Skill
+  name: Learn Skills
   text: Skill 使用学习手册
   tagline: 收集 GitHub 上优秀 Skill 的用法与实战经验,帮助新手快速上手
   actions:
@@ -14,7 +14,7 @@ hero:
       link: /skills/
     - theme: alt
       text: GitHub
-      link: https://github.com/xzzcy0517/learn-skill
+      link: https://github.com/xzzcy0517/learn-skills
 
 features:
   - icon: 📚

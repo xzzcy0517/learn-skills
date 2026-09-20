@@ -1,4 +1,4 @@
-# Learn Skill
+# Learn Skills
 
 > 收集和分享 GitHub 上优秀 Skill 的使用方法、最佳实践与学习经验的文档仓库。
 
@@ -18,7 +18,7 @@
 ## 目录结构
 
 ```
-learn-skill/
+learn-skills/
 ├── docs/                       # 文档源文件(站点内容)
 │   ├── .vitepress/config.mts   # 站点配置(导航、侧边栏、搜索等)
 │   ├── index.md                # 站点首页
