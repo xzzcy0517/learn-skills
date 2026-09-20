@@ -8,6 +8,7 @@
 
 | Skill | 简介 | 笔记 | 快照 | 状态 |
 | --- | --- | --- | --- | --- |
+| ai-ppt-skill | 自制的「先 HTML 后 PPT」跨 Agent 演示技能 | [阅读](/skills/ai-ppt-skill/) | `vendor/ai-ppt-skill/` | 📝 笔记完整,待实操验证 |
 | anthropics-skills | 官方 Agent Skills 合集导读 + 许可普查 | [阅读](/skills/anthropics-skills/) | ❌ 整仓不镜像(许可混合) | 📝 草稿 |
 | anthropics-skill-creator | 官方的"写 Skill 的 Skill" | [阅读](/skills/anthropics-skill-creator/) | `vendor/anthropics-skill-creator/` | 📝 草稿 |
 

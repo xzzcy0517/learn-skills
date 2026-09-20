@@ -1,0 +1,11 @@
+# 上游快照出处 —— 由 scripts/vendor.mjs 维护,请勿手改 name/source/ref/subdir/commit
+# license 与 status 需要人工核对修改(status: draft 笔记未写完 / verified 已验证 / outdated 上游已更新待复学)
+name: ai-ppt-skill
+source: https://github.com/xzzcy0517/ai-ppt-skill
+ref: main
+subdir: null
+commit: 0e1a1cda10ffacc4400578a1fafd7bb176e0997a
+license: 自有仓库,未声明开源许可证(版权即本人,再分发无障碍)
+vendored_at: 2026-09-20
+notes: docs/skills/ai-ppt-skill
+status: draft

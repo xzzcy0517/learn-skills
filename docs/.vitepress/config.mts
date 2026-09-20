@@ -32,6 +32,10 @@ export default defineConfig({
             { text: '总览', link: '/skills/' },
             { text: '笔记模板', link: '/skills/template' },
             {
+              text: 'ai-ppt-skill(自制)',
+              link: '/skills/ai-ppt-skill/',
+            },
+            {
               text: 'anthropics/skills(合集导读)',
               link: '/skills/anthropics-skills/',
             },

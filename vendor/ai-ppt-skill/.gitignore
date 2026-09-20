@@ -1,0 +1,13 @@
+# 渲染临时 PNG
+slide_png/
+
+# 生成的 PPT 和口述稿（用户产物，不纳入版本库）
+*.pptx
+口述稿.md
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
