@@ -49,7 +49,7 @@ npm run vendor:update -- <name>
 
 ## 合规注意
 
-- 每个快照**必须注明出处**:`SOURCE.yml` 的 `source` + 快照目录自带 `README.md`,缺一不可
+- 每个快照**必须注明出处**:`SOURCE.yml` 的 `source` + 脚本生成的 `SNAPSHOT.md`,缺一不可;上游自带的 README 原样保留
 - 上游的 `LICENSE` 及文件内版权声明**一律保留**;vendored 子目录时脚本会自动带上仓库根的 LICENSE/README
 - 快照是**原样备份**,不要在 `vendor/` 里改文件;自己的实验和魔改不提交
 - 若上游为私有仓库或无许可证,先确认是否允许再分发;不确定就只写笔记、不放快照

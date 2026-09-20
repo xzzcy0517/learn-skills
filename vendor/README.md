@@ -10,9 +10,9 @@
 ```
 vendor/<skill-name>/
 ├── SOURCE.yml    # 出处记录:源仓库、ref、commit、拉取日期、license、status(必须)
-├── README.md     # 快照说明,含原始文档出处与版权提示(脚本生成)
+├── SNAPSHOT.md   # 本快照说明,含原始文档出处与版权提示(脚本生成,不占用上游 README.md)
 ├── LICENSE*      # 上游许可证(如有,必须保留)
-└── ...           # 上游 skill 的原始文件(SKILL.md、脚本等),原样保存,不做修改
+└── ...           # 上游 skill 的原始文件(README.md、SKILL.md、脚本等),原样保存,不做修改
 ```
 
 ## 拉取与更新

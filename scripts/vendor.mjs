@@ -93,7 +93,7 @@ function copySkill(tmpDir, dest, subdir) {
   }
 }
 
-const readmeTemplate = (m) => `# ${m.name}(上游快照)
+const readmeTemplate = (m) => `# SNAPSHOT.md —— 本快照说明(脚本自动生成,上游原文见 README.md / SKILL.md)
 
 > 本目录是 [${m.source}](${m.source}) 在 **${m.vendored_at}**(commit \`${short(m.commit)}\`)时点的快照,
 > 由 \`scripts/vendor.mjs\` 生成,用于配合 [学习笔记](../../docs/skills/${m.notes.replace('docs/skills/', '')}/index.md) 的"时点学习"。
@@ -130,7 +130,7 @@ function cmdFetch(urlArg, nameArg, opts) {
     status: 'draft',
   }
   fs.writeFileSync(path.join(dest, 'SOURCE.yml'), dumpMeta(meta))
-  fs.writeFileSync(path.join(dest, 'README.md'), readmeTemplate(meta))
+  fs.writeFileSync(path.join(dest, 'SNAPSHOT.md'), readmeTemplate(meta))
   console.log(`✅ 快照已保存到 vendor/${name}/(commit ${short(commit)})`)
   console.log(`   下一步:
    1. 核对并填写 vendor/${name}/SOURCE.yml 的 license
@@ -163,7 +163,7 @@ function cmdUpdate(name) {
   meta.updated_at = today()
   meta.status = meta.status === 'verified' ? 'outdated' : meta.status
   fs.writeFileSync(ymlPath, dumpMeta(meta))
-  fs.writeFileSync(path.join(dest, 'README.md'), readmeTemplate(meta))
+  fs.writeFileSync(path.join(dest, 'SNAPSHOT.md'), readmeTemplate(meta))
   console.log(`🔄 ${name} 快照已更新:${short(old)} → ${short(commit)}`)
   console.log(`   上游变更对比:${meta.source}/compare/${old}...${commit}`)
   console.log(`   下一步:对照 compare 链接看上游改了什么 → 复学并更新 docs/skills/${name}/ 笔记 → 把 SOURCE.yml 的 status 改回 verified`)
