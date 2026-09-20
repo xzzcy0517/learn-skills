@@ -20,24 +20,39 @@
 - 内置 7 种受众风格(tech-dark / elementary / junior / senior / university / government / report),另有成品参照 `themes/tech-dark.example.html`
 - 核心卖点:**改版成本低** —— 永远只改 HTML 源头,重跑脚本出新版,PPT 本身是高清图页、不可直接编辑
 
-适合谁:要让 agent 做课件、汇报、答辩稿,又受够了 AI 直出 PPT 格式漂移的人。
+适合谁:想让 AI 帮忙做课件、汇报、答辩稿,又受不了 AI 直出 PPT 格式乱七八糟的人。**完全不会编程也能用** —— 全程只需要复制一句话。
 
-## 快速上手
+## 小白用法:三步就够
+
+1. **安装**:复制下面这段,发给你电脑上的 AI 助手(Claude Code / Kimi / Codex 等,装哪个都行)——
+
+   > 请帮我安装这个技能:把 https://github.com/xzzcy0517/ai-ppt-skill 下载下来,
+   > 放进你存放技能(skills)的文件夹里,目录名字叫 ai-ppt,然后帮我装好它需要的依赖
+   > (pip install python-pptx,以及确认电脑里有 Chrome 浏览器),最后告诉我装没装好。
+
+2. **做 PPT**:直接说人话,比如"帮我做一份小学三年级数学《认识分数》的课件,内容生动一点"。AI 会先做出一版网页给你在浏览器里看,你说 OK 它才转成 PPT 文件。
+3. **改 PPT**:哪里不对就直说("第 3 页标题字太小""把第二部分拆成两页"),AI 改稿子重新生成 —— **不用你自己打开 PowerPoint 调格式**。
+
+装的过程中 AI 如果提到 macOS、Chrome 之类的词:这个技能目前**只保证苹果电脑好用**(需要 Chrome 浏览器配合);Windows 用户可先按下面「备用装法」试试并反馈。
+
+## 快速上手(备用:命令行装法,熟悉终端的人看这里)
 
 ```bash
-# 1. 安装到对应 Agent 的用户级 skill 目录(目录名必须是 ai-ppt)
+# 1. 装到对应 Agent 的技能目录(目录名必须是 ai-ppt)
 git clone git@github.com:xzzcy0517/ai-ppt-skill.git ~/.claude/skills/ai-ppt   # Claude Code
 # Kimi/Codex 共享目录:~/.agents/skills/ai-ppt   Kimi 桌面:~/.kimi/skills/ai-ppt
 
-# 2. 依赖:macOS + Google Chrome(无头渲染)+ python-pptx
+# 2. 依赖:macOS + Google Chrome(用来把网页渲染成图)+ python-pptx(生成 PPT 文件的工具)
 pip install python-pptx
 
-# 3. 对 Agent 说一句「帮我生成一份 PPT」即可触发
+# 3. 对你的 Agent 说一句「帮我生成一份 PPT」即可触发
 ```
 
-非 macOS 环境(如 Linux 服务器)需设 `CHROME` 环境变量指向浏览器可执行文件 —— 脚本默认只探测 macOS 路径。
+非 macOS 环境(如 Linux 服务器)需设 `CHROME` 环境变量指向浏览器可执行文件 —— 脚本默认只探测苹果电脑的路径。
 
-## 核心用法
+## 核心用法(进阶:了解 AI 背后在干嘛)
+
+小白可以跳过本节。装好后这些步骤 AI 会自动执行,你只管提要求:
 
 工作流固定七步(SKILL.md 强约束,agent 按序执行):
 

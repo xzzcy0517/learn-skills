@@ -5,6 +5,8 @@
 
 ## 待确认
 
+- [ ] 2026-09-20 | ai-ppt-skill(上游仓库) | 上游 README 只有命令行装法 → 建议把笔记里的「AI 自然语言安装 + 小白三步」同步进上游 README(涉及改你另一个仓库,需你确认);确认后同步并 `vendor:update` 刷新快照
+
 - [ ] 2026-09-20 | ai-ppt-skill | 端到端实操(macOS + Chrome 转 .pptx、口述稿写入备注)尚未验证 → 跑通后把 `vendor/ai-ppt-skill/SOURCE.yml` 的 `status` 改为 `verified`,补笔记「实战经验」一节,然后删本条
 - [ ] 2026-09-20 | ai-ppt-skill(上游仓库) | 仓库无 LICENSE 文件,外人复用有法律模糊地带 → 决定是否给上游补开源许可(如 MIT);补后执行 `npm run vendor:update -- ai-ppt-skill` 并同步 SOURCE.yml 的 license,然后删本条
 - [ ] 2026-09-20 | ai-ppt-skill | 转换脚本只探测 macOS 浏览器路径,Linux 下依赖 `CHROME` 环境变量,未实测 → 如在本服务器实测通过,把可行的安装/调用方法写进笔记「实战经验」,然后删本条
